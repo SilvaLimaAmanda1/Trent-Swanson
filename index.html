@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+	<title>Trent Swanson</title>
+</head>
+<body>
+	<!--Canvas para o efeito futurista de particulas-->
+	<canvas id="particle-canvas"></canvas>
+
+	<header>
+	<div class="logo">
+		<img src="img/logo-sem-fundo.png" alt="Logo Trent Swanson" onerror="this.onerror=null; this.src='https://placehold.co/80x80/1A1A1A/5ce1e6?text=TS'">	
+	</div>
+	<nav>
+		<ul>
+			<li><a href="#sobre">Sobre</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#contato">Contato</a></li>
+		</ul>
+	</nav>
+	</header>
+
+<main class="container">
+	<!--SEÇÃO SOBRE(HOME)-->
+	<section id="sobre">
+		<h1>Gerente de T.I Pleno</h1>
+		<img src="img/trent.jpg" alt="Foto de perfil" class="profile-img" onerror="this.onerror=null; this.src='https://placehold.co/180x180/1A1A1A/5ce1e6?text=TRENT'">
+            <h2>Trent Swanson</h2>
+			<p>Sou formado em Tecnologia em Gestão de TI e atualmente estou cursando Engenharia de Software. Meu foco é na gestão estratégica de TI combinada com a paixão por desenvolvimento **Front-end moderno**, criando soluções robustas e interfaces de usuário dinâmicas.</p>
+    </section>
+    <!---SEÇÃO SKILLS--->
+    <section id="skills">
+    	<h2>Minhas Competências Técnicas e Foco Atual</h2>
+    	<ul>
+    		<li>React</li>
+    		<li>Typescript</li>
+    		<li>HTML & CSS(Puro e Moderno)</li>
+    		<li>AWS</li>
+    		<li>GCP</li>
+    		<li>Gestão de Projetos Ágeis</li>
+    	</ul>
+    </section>	
+
+	<!---SEÇÃO CONTATO (FORMULARIO)--->
+	<section id="contato">
+		<h2>Vamos Conectar e Construir o Futuro. Contate-me!</h2>
+		<form class="contact-form" onsubmit="handleFormSubmit(event)">
+			<label for="nome">Nome:</label>
+			<input type="text" name="nome" id="nome" placeholder="Seu nome completo" required>
+			<label for="email">E-mail</label>
+			<input type="email" name="email" id="email" placeholder="Seu e-mail profissional" required>
+			<label for="Assunto:"></label>
+			<input type="text" name="assunto" id="assunto" placeholder="Sua mensagem ou proposta">
+
+			<label for="mensagem">Mensagem:</label>
+			<textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem ou proposta"></textarea>
+
+			<button type="submit" class="btn-action">Enviar Mensagem Criptografada</button>
+			<div id="message-feedback" style="margin-top: 15px; font-weight: bold;"></div>
+		</form> 
+	</section>
+</main>	
+<footer>
+        <div>
+            <a href="#" aria-label="Github"><i class="ri-github-fill"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" aria-label="Twitter/X"><i class="ri-twitter-x-line"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+        </div>
+        <p>&copy; 2025 Trent Swanson | Desenvolvido com Estilo Futurista</p>
+    </footer>
+<script src="script.js"></script>    
+</body>
+</html>
